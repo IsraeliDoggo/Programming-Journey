@@ -1,0 +1,21 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Paycheck",
+			"request": "launch",
+			"mainClass": "PaycheckProgram.Paycheck",
+			"projectName": "Programming Journey_dc4f255e"
+		},
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Open FormManupulation.html",
+			"file": "f:\\Funny land\\Learning center\\Classroom\\JavaScript\\lectures\\Form Manipulation, Timers and JASON\\Notes\\FormManupulation.html"
+		}
+	]
+}

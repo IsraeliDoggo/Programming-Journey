@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P6</title>
+</head>
+
+<body>
+    <marquee id="scrolling" style="color: red; background-color: blue;">Scrolling Text with JavaScript event
+        onmouseenter and onmouseleave</marquee>
+
+    <script>
+        let scrollingText = document.getElementById("scrolling");
+
+        scrollingText.addEventListener("mouseenter", function (e) {
+            document.getElementById("scrolling").stop();
+        })
+        scrollingText.addEventListener("mouseleave", function (e) {
+            document.getElementById("scrolling").start();
+        })
+    </script>
+</body>
+
+</html>

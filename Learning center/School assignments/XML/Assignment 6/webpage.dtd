@@ -1,0 +1,12 @@
+<!ELEMENT homepage (head, body)>
+<!ELEMENT head (title)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT body (banner, maintitle, (rule), text, footer)>
+<!ELEMENT banner ANY>
+<!ATTLIST banner source CDATA #REQUIRED>
+<!ELEMENT maintitle (#PCDATA)>
+<!ELEMENT rule EMPTY>
+<!ELEMENT text (para)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT footer ANY>
+<!ATTLIST footer source CDATA #REQUIRED>

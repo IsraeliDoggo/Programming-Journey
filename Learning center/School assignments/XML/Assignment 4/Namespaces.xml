@@ -1,0 +1,23 @@
+<h:html 
+    xmlns:barnesnoble="http://www.barnesandnoble.com/books" 
+    xmlns:h="http://www.w3.org/1999/xhtml">
+<h:head>
+  <h:title>XML Books found at Barnes and Noble</h:title>
+</h:head>
+<h:body>
+<h:table>
+  <h:tr>
+     <h:th>Title</h:th>
+     <h:th>Author</h:th>
+     <h:th>Price</h:th>
+     <h:th>ISBN</h:th>
+  </h:tr>
+  <h:tr>
+     <h:td><barnesnoble:author>XML: Visual Quickstart Guide</barnesnoble:author></h:td>
+     <h:td><barnesnoble:title>Kevin Goldberg</barnesnoble:title></h:td>
+     <h:td><barnesnoble:price>21.69</barnesnoble:price></h:td>
+     <h:td><barnesnoble:isbn>9780132104319</barnesnoble:isbn></h:td>
+ </h:tr>
+</h:table>
+</h:body>
+</h:html>

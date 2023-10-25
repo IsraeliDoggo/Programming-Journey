@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:element name="SONGS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SONG" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                        <xs:element type = "xs:string" name="TITLE" />
+                        <xs:element type = "xs:string" name="SONGWRITER" />
+                        <xs:element type = "xs:string" name="PUBLISHER" />
+                        <xs:element type = "xs:string" name="PRODUCER" />
+                        <xs:element type = "xs:string" name="LENGTH" />
+                        <xs:element type = "xs:integer" name="YEAR" />
+                        <xs:element type = "xs:string" name="ARTIST" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

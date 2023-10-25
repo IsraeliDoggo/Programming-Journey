@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <h1>Event Bubbling and Capturing Demo</h1>
+    <style>
+        body{
+            padding:100px;
+            background-color: cornsilk;
+        }
+        #myDiv{
+            padding:50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <button id="btn">Click Me</button>
+
+    </div>
+    <script>
+        let d=document.getElementById("myDiv");
+        let b=document.getElementById("btn");
+
+        d.addEventListener('click',divClicked,true);
+        b.addEventListener('click',btnClicked,true)
+
+        document.body.addEventListener('click',bodyClicked,true);
+        
+        function divClicked()
+        {
+            console.log("div is clicked");
+        }
+        function btnClicked()
+        {
+            console.log("buttn is clicked")
+        }
+        function bodyClicked()
+        {
+            console.log("body is clicked");
+        }
+</script>
+</body>
+</html>

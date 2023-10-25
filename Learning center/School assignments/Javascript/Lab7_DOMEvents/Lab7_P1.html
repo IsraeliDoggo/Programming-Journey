@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P1</title>
+</head>
+
+<body>
+    <script>
+        let okPressed = window.confirm("Would you like to see a popup window?");
+        if (okPressed) {
+            let popUpWindow = window.open("", "", "width=250, height=200");
+            popUpWindow.document.write("<h1>Popup Demo</h1>");
+        }
+    </script>
+</body>
+
+</html>

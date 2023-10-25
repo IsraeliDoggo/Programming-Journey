@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //prompts user for input
+        let amount = prompt("Enter the Amount:");
+        amount = parseFloat(amount); // converts the string into a float value.
+
+        dollarsToCents = amount * 100; //converts the amount of money into total cents.
+
+        //calculates the amount of dollars.
+        let dollars = dollarsToCents / 100;
+        dollars = parseInt(dollars); // converts the decimal into a integer value.
+        let cents = dollarsToCents % 100; //stores the remaining cents.
+        
+        //calculates the amount of quarters.
+        let quarters = cents / 25;
+        quarters = parseInt(quarters);
+        cents = cents % 25;
+
+        //calculates the amount of dimes.
+        let dimes = cents / 10;
+        dimes = parseInt(dimes);
+        cents = cents % 10;
+
+        //caculates the amount of nickels.
+        let nickels = cents / 5;
+        nickels = parseInt(nickels);
+        let pennies = cents % 5;
+
+        //outputs the results
+        console.log(`Your amount $${amount} consists of:`);
+        console.log(`${dollars} dollars`);
+        console.log(`${quarters} quarters`);
+        console.log(`${dimes} dimes`);
+        console.log(`${nickels} nickels`);
+        console.log(`${pennies} pennies`);
+    </script>
+</body>
+
+</html>

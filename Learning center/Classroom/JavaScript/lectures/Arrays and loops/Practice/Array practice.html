@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //people waiting in line(kylo is in front, leia at the end)
+        let line = ["Kylo", "Finn", "Rey", "Maz", "Leia"];
+
+        console.log(line); //correct output: Kylo, Finn, Rey, Maz, Leia
+        line.shift();  
+
+        let x = line.pop();
+        line.unshift(x);
+
+        line.splice(2, 0, "Poe", "Snoke")
+        line.splice(4, 1);
+
+        line.push("Han")
+
+        console.log(line)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P8</title>
+</head>
+
+<body>
+    <select id="options">
+        <option>Select Color</option>
+        <option>Red</option>
+        <option>Green</option>
+        <option>Purple</option>
+        <option>Blue</option>
+    </select>
+    <script>
+        let option = document.getElementById("options");
+
+        option.addEventListener("change", function () {
+            let color = option.value;
+            document.body.style.backgroundColor = color;
+        })
+    </script>
+</body>
+
+</html>

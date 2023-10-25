@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P7</title>
+</head>
+
+<body>
+    <div>
+        <p>Textbox Background will automatically change as you type.</p>
+        <input type="text" id="colorName">
+
+        <p>Enter your Name, it will automatically be converted into capitol letters.</p>
+        <input type="text" id="name">
+        <p id="upperName"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", loadedHandlerColor);
+        document.addEventListener("DOMContentLoaded", loadedHandlerName);
+
+        function loadedHandlerColor() {
+            let textBox = document.querySelector("#colorName");
+            textBox.addEventListener("keyup", keyupHandlerColor);
+        }
+
+        function keyupHandlerColor(event) {
+            if (event.key == "Enter") {
+                let textBox = event.target;
+                textBox.style.backgroundColor = textBox.value;
+            }
+        }
+
+        function loadedHandlerName() {
+            let textBox = document.querySelector("#name");
+            textBox.addEventListener("keyup", keyupHandlerName);
+        }
+
+        function keyupHandlerName(event) {
+            if (event.key == "Enter") {
+                let textBox = event.target;
+                textBox = textBox.value;
+
+                let upperCase = textBox.toUpperCase();
+                document.getElementById("upperName").textContent = upperCase;
+            }
+        }
+    </script>
+</body>
+
+</html>

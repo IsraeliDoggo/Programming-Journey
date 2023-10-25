@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE homepage
+[
+<!ELEMENT homepage (head, body)>
+<!ELEMENT head (title)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT body (banner, maintitle, (rule), text, footer)>
+<!ELEMENT banner ANY>
+<!ATTLIST banner source CDATA #REQUIRED>
+<!ELEMENT maintitle (#PCDATA)>
+<!ELEMENT rule EMPTY>
+<!ELEMENT text (para)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT footer ANY>
+<!ATTLIST footer source CDATA #REQUIRED>
+]
+>
+
+<homepage>
+	<head>
+		<title>My Home Page</title>
+    </head>
+
+	<body>
+		<banner source="topbanner.gif" />
+		<maintitle>Welcome to My Home Page</maintitle>
+		<rule />
+		<text>
+			<para>
+  		 	  Sorry, this page is still under construction. Please come back later.
+   		    </para>
+		</text>
+		<footer source="bottombanner.gif" />
+	</body>
+</homepage>

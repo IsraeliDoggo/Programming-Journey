@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE homepage SYSTEM "webpage.dtd">
+
+<homepage>
+	<head>
+		<title>My Home Page</title>
+    </head>
+
+	<body>
+		<banner source="topbanner.gif" />
+		<maintitle>Welcome to My Home Page</maintitle>
+		<rule />
+		<text>
+			<para>
+  		 	  Sorry, this page is still under construction. Please come back later.
+   		    </para>
+		</text>
+		<footer source="bottombanner.gif" />
+	</body>
+</homepage>

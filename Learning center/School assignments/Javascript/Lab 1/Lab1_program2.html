@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //declares fixed tip ammount and sales tax.
+        const tipAmount = 0.15;
+        const salesTaxAmount = 0.07;
+        
+        let foodCharge = prompt('Enter the Charge for the food:'); // prompts user for input.
+        foodCharge = parseFloat(foodCharge); // converts string input into a float value.
+
+        //calculates tip amount.
+        let tip = foodCharge * tipAmount;
+        tip = parseFloat(tip);
+
+        //calculates sales tax amount.
+        let salesTax = foodCharge * salesTaxAmount;
+        salesTax = parseFloat(salesTax);
+
+        let total =  foodCharge + tip + salesTax; //calculates total cost.
+
+        //Outputs the information.
+        console.log(`Meal Details:`);
+        console.log(`Food Charge: $` +foodCharge);
+        console.log(`Tip (15%): $` +tip);
+        console.log(`Sales Tax (7%): $` +salesTax);
+        console.log(`Total Amount: $` +total); 
+    </script>
+</body>
+
+</html>

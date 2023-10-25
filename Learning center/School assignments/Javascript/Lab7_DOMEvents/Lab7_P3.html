@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P3</title>
+
+    <style>
+        .colorSquare {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 12px; font-weight: bold;">Change the background color using JavaScript Event onmouseover
+        and onmouseout.</p>
+
+    <div class="colorSquare" style="background-color: red;"></div>
+    <div class="colorSquare" style="background-color: blue;"></div>
+    <div class="colorSquare" style="background-color: green;"></div>
+
+    <script>
+        let squares = document.getElementsByClassName("colorSquare");
+
+        for (let i = 0; i < squares.length; i++) {
+            let square = squares[i];
+            square.addEventListener("mouseover", function () {
+                if (i == 0) {
+                    document.body.style.backgroundColor = "red";
+                }
+                else if (i == 1) {
+                    document.body.style.backgroundColor = "blue";
+                }
+                else if (i == 2) {
+                    document.body.style.backgroundColor = "green";
+                }
+            });
+
+            square.addEventListener("mouseout", function () {
+                document.body.style.backgroundColor = "white";
+            });
+        }
+
+    </script>
+</body>
+
+</html>

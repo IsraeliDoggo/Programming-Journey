@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P5</title>
+</head>
+
+<body>
+    <div>
+        <img id="animals"
+            src="https://static01.nyt.com/images/2016/06/27/travel/27update-animals/27update-animals-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+    </div>
+    <script>
+        let picture = document.getElementById("animals");
+
+        picture.addEventListener("mousedown", function () {
+            picture.src = "https://swiftmedia.s3.amazonaws.com/mountain.swiftcom.com/images/sites/11/2023/07/06234314/by-helping-wild-animal-1.jpeg";
+        })
+        picture.addEventListener("mouseup", function () {
+            picture.src = "https://static01.nyt.com/images/2016/06/27/travel/27update-animals/27update-animals-articleLarge.jpg?quality=75&auto=webp&disable=upscale";
+        })
+    </script>
+</body>
+
+</html>

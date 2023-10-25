@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelone xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <required>
+        <course unit="3">CA 100D</course>
+        <course unit="1">CA 040D</course>
+        <course unit="1">CA 045D</course>
+        <course unit="1">CA 050D</course>
+        <course unit="1">CA 070D</course>
+        <course unit="1">CA 075D</course>
+        <course unit="1">CA 080D</course>
+    </required>
+    <elective>
+        <course unit="3">BUS 008</course>
+        <course unit="3">BUS 007</course>
+        <course unit="3">BUS 082</course>
+        <course unit="1">CA 055</course>
+        <course unit="1">CA 060</course>
+        <course unit="1">CA 065</course>
+    </elective>
+</levelone>

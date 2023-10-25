@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7_P4</title>
+</head>
+
+<body>
+    <p>How are you today?</p>
+
+    <script>
+        let textChange = document.querySelector("p");
+
+        textChange.addEventListener("mouseover", function (e) {
+            e.target.textContent = "WELCOME!";
+        })
+
+        textChange.addEventListener("mouseout", function (e) {
+            e.target.textContent = "How are you today?";
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //declares constant variables
+        const milk = "7-14 days";
+        const rawChicken = "2-3 days";
+        const rawBeef = "3-5 days";
+        const eggs = "3-5 weeks";
+
+        let foodInput = prompt("What type of food are you packaging:"); //user inputs food item.
+
+        //tests if what was entered matches any of the cases, if not, returns unknown.
+        switch(foodInput) {
+            case "milk":
+                bestBuy = `${milk}`;
+                break;
+            case "chicken":
+                bestBuy = `${rawChicken}`;
+                break;
+            case "beef":
+                bestBuy = `${rawBeef}`;
+                break;
+            case "eggs":
+                bestBuy = `${eggs}`;
+                break;
+            default:
+                bestBuy = "unknown";
+            
+        }
+
+        console.log(`the ${foodInput} will go bad in ${bestBuy}`);
+
+    </script>
+</body>
+</html>

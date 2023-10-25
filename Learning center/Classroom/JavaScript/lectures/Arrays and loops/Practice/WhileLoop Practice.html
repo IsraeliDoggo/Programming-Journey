@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let insects = 2;
+        let weeks = 1;
+
+        do{
+            insects *= 2;
+            console.log(insects);
+            weeks++;
+            
+            if(weeks % 4 === 0){
+                insects *= 0.60;
+            }
+        }while(insects < 10000);
+
+        console.log(`It will Take ${weeks} weeks for the Insect Population to reach 10,000.`);
+    </script>
+</body>
+</html>

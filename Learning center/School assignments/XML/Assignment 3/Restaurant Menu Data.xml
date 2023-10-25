@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="styles.css"?>
+<menu>
+    <item>
+        <number> 1</number>
+        <dishName>Sunburnt Chicken</dishName>
+        <features>Salad, Vegtables, Baked Potato, and Desert</features>
+        <fatGrams>23</fatGrams>
+        <description>Chicken prepared so hot, you will need a gallon of soda to wash it down</description>
+    </item>
+    <item>
+        <number> 2</number>
+        <dishName>Jerk Chicken</dishName>
+        <features>Soup, Vegetables, and Desert</features>
+        <fatGrams>5</fatGrams>
+        <description>A delicious hot Jamaican dish prepared by our master chef</description>
+    </item>
+</menu>

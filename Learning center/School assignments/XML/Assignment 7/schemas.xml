@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SONGS>
+    <SONG>
+        <TITLE>Happy Birthday</TITLE>
+        <SONGWRITER>Weird Al Yankovic</SONGWRITER> 
+        <PUBLISHER>Scotti Brothers Records</PUBLISHER>
+        <PRODUCER>Rick Derringer</PRODUCER>
+        <LENGTH>2:26</LENGTH>
+        <YEAR>1983</YEAR>
+        <ARTIST>Weird Al Yankovic</ARTIST>
+    </SONG>
+    <SONG>
+        <TITLE>The Hamilton Polka</TITLE>
+        <SONGWRITER>Lin-Manuel Miranda</SONGWRITER> 
+        <PUBLISHER>Atlantic Records</PUBLISHER>
+        <PRODUCER>Lin-Manuel Miranda ("Hamilton's Hamildrops")</PRODUCER>
+        <LENGTH>5:00</LENGTH>
+        <YEAR>2018</YEAR>
+        <ARTIST>Lin-Manuel Miranda</ARTIST>
+    </SONG>
+</SONGS>
